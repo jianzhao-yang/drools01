@@ -1,0 +1,14 @@
+server:
+  port: 8081
+spring:
+  datasource:
+    url: jdbc:mysql://10.5.85.58:3306/dh_test?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&zeroDateTimeBehavior=convertToNull&&useSSL=false
+    username: dh_test
+    password: Y2017dh123
+    type: com.alibaba.druid.pool.DruidDataSource
+    initialSize: 5
+    minIdle: 5
+    maxActive: 50
+    maxWait: 1000
+    filters: stat,wall,log4j
+    driver-class-name: com.mysql.cj.jdbc.Driver
